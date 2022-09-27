@@ -1,0 +1,67 @@
+body {
+	background-color: #092740;
+	background-image: url("../img/p3_circle.svg");
+	background-size: 2160px;
+	background-position: calc(50% - 1013px) -545px;
+	background-repeat: no-repeat;
+}
+
+nav {
+	color:#022d49;
+	text-shadow:
+		1px 1px 0 #3594ec,
+		-1px 1px 0 #3594ec,
+		1px -1px 0 #3594ec,
+		-1px -1px 0 #3594ec,
+		1px 1px 0.2em #022d49,
+		-1px 1px 0.2em #022d49,
+		1px -1px 0.2em #022d49,
+		-1px -1px 0.2em #022d49;
+}
+
+h1 {
+	text-transform: uppercase;
+	color: #f9c052;
+}
+
+h2 {
+	color: white;
+	background-image: url("../img/p3f.png");
+	background-position: bottom center;
+	background-repeat: no-repeat;
+	min-height: 120px;
+	position: relative;
+	display: inline-block;
+	width: 400px;
+}
+
+h3 {
+	color: #57171c;
+}
+
+table {
+	color: black;
+}
+
+section.extra > section {
+	color: #51535c;
+	border-style: solid;
+	border-color: rgba(255, 255, 255, 0.78431373);
+	border-width: 21px 11px;
+	border-image:
+		url(../img/p3_dialog.svg)
+		calc(21/128*100%) calc(11/598*100%) fill
+		stretch;
+}
+
+body::before {
+	content: "";
+	display: block;
+	width: 5em;
+	height: 100%;
+	background-color: #f9c052;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: -9;
+}

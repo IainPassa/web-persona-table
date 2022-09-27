@@ -1,0 +1,35 @@
+td.normal.rowmatch, td.normal.colmatch {
+	background-color:palegreen;
+}
+
+td.same.rowmatch, td.same.colmatch {
+	background-color:pink;
+}
+
+td.same.arcanamatch {
+	background-color:pink;
+}
+
+td.triangle.rowmatch, td.triangle.colmatch {
+	background-color:powderblue;
+}
+
+td.normal.invalid.rowmatch, td.normal.invalid.colmatch {
+	background-color:darkgray;
+}
+
+td.triangle.invalid.rowmatch, td.triangle.invalid.colmatch {
+	background-color:darkgray;
+}
+
+td.arcanamatch1 {
+	background-color:gold;
+}
+
+td.arcanamatch2 {
+	background-color:gold;
+}
+
+td.spooky {
+	visibility:hidden;
+}

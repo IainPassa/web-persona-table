@@ -1,0 +1,31 @@
+body {
+	background-color:gray;
+}
+
+header > nav {
+	visibility:hidden;
+}
+
+main > nav {
+	background-color:lightgray;
+	display:block;
+}
+
+article {
+	visibility:hidden;
+}
+
+nav > ul > li {
+	display:inline-block;
+	margin:0.7em;
+}
+
+nav > ul > li > a {
+	display:table-cell;
+	border-radius:0.3em;
+	width:16em;
+	height:8em;
+	text-decoration:none;
+	vertical-align:bottom;
+	box-shadow: 5px 5px 10px black;
+}

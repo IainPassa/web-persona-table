@@ -1,0 +1,76 @@
+body {
+	font-family:"DejaVu Sans", sans-serif;
+	text-align:center;
+	margin:0;
+}
+
+h1 {
+	width:50%;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+nav {
+	padding:1em;
+}
+
+main > nav {
+	display:none;
+}
+
+table {
+	font-size:x-small;
+	border-collapse:collapse;
+	white-space:nowrap;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+th {
+	background-color:gold;
+}
+
+td,th {
+	border:1px solid black;
+	min-width:6em;
+}
+
+td.triangle {
+	background-color:cornflowerblue;
+}
+
+td.same {
+	background-color:lightsalmon;
+}
+
+td.normal {
+	background-color:darkseagreen;
+}
+
+th:empty {
+	visibility:hidden;
+	border:none;
+}
+
+td.invalid {
+	background-color:gray;
+}
+
+section.extra {
+	padding:2em;
+}
+
+section.extra > section {
+	width:28em;
+	display:inline-block;
+	vertical-align:top;
+	text-align:left;
+	padding:0.6em;
+	margin:2.5em 0.5em;
+	position:relative;
+}
+
+section.extra > section > h3 {
+	text-align:center;
+	margin:0.5em 0 0.5em 0;
+}

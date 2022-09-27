@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Persona Fusion Table</title>
+	<link href="res/css/style.css" rel="stylesheet"/>
+	<link href="res/css/nogame.css" rel="stylesheet" id="gameStylesheet"/>
+	<link href="res/css/dynamic.css" rel="stylesheet" id="dynamicStylesheet"/>
+</head>
+<body>
+	<header>
+		<h1>Interactive Persona Fusion Table</h1>
+		<nav>
+			<label for="optionGameSelect">Game Selection:</label>
+			<select id="optionGameSelect">
+			</select>
+		</nav>
+	</header>
+	<main>
+		<nav>
+			<h2>Choose a Persona game!</h2>
+			<ul id="fancyGameSelect">
+			</ul>
+		</nav>
+		<noscript>
+			<h2>JavaScript is disabled</h2>
+			<p>This page cannot function without JavaScript. Please enable it and try again.</p>
+		</noscript>
+		<article>
+			<h2 id="gameTitle"></h2>
+		<section class="table">
+			<table id="contentTable">
+
+			</table>
+			
+		</section>
+		<section class="extra">
+			<section>
+				<h3>Options</h3>
+				<p><select id="optionHighlightMatchesManual">
+				<option value="" selected>Off</option>
+				</select>
+				<label for="optionHighlightMatchesManual">Highlight all matches of specified arcana</label></p>
+				<p><input type="checkbox" id="optionHighlightMatchesAuto" name="optionHighlightMatchesAuto">
+				<label for="optionHighlightMatchesAuto">Highlight all matches of arcana on mouseover</label></p>
+				<p><input type="checkbox" id="optionHighlightSameColAndRow" name="optionHighlightSameColAndRow" checked>
+				<label for="optionHighlightSameColAndRow">Highlight columns and rows on mouseover</label></p>
+				<p class="triangleinfo"><input type="checkbox" id="optionHighlightTriangleMatches" name="optionHighlightTriangleMatches" checked>
+				<label for="optionHighlightTriangleMatches">Highlight triangle spread possibilities on mouseover</label></p>
+				<p class="triangleinfo"><input type="checkbox" id="optionHideTriangleData" name="optionHideTriangleData">
+				<label for="optionHideTriangleData">Omit triangle spread fusion information (like in the official manuals)</label></p>
+			</section>
+			<section>
+				<h3>How to Use</h3>
+				<p>Clicking the table freezes all mouseover effects in place until the table is clicked again.</p>
+				<p>Green table cells contain the results of normal-spread fusions.</p>
+				<p class="triangleinfo">Blue table cells contain the results of triangle-spread fusions.</p>
+				<p>Red table cells contain the results of fusing personas of the same arcana.</p>
+			</section>
+			<section>
+				<h3>On Normal Fusion</h3>
+				<p>(todo: write nice instructions) match column and row for the arcanas of your ingredients. the exact result is also based on the avg base level, usually rounded upwards, but same-arcana rounds downwards</p>
+			</section>
+			<section class="triangleinfo">
+				<h3>On Triangle Fusion</h3>
+				<p>To find the arcana result of a triangle fusion, first find which arcana you would get from fusing the two lowest-levelled personas of the three (with the green section of the table, like a normal-spread fusion). Take the resulting arcana and combine it with the arcana of the highest-levelled persona of the three in the blue section of the table. In the case of a level tie, the persona with a lower arcana (in the order used in the table headers) is treated as higher-levelled. (For instance, a persona of the Fool arcana is always treated as higher-levelled in the case of a tie.)</p>
+			</section>
+		</section>
+		</article>
+	</main>
+	<script src="script.js"></script>
+</body>
+</html>

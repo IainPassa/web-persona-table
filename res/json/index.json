@@ -1,0 +1,34 @@
+{
+	"games":[
+		{
+			"identifier":"p3f",
+			"title":"Persona 3 FES (and Portable)",
+			"bgcolor":"dodgerblue",
+			"textcolor":"black"
+		},
+		{
+			"identifier":"p4",
+			"title":"Persona 4",
+			"bgcolor":"yellow",
+			"textcolor":"black"
+		},
+		{
+			"identifier":"p4g",
+			"title":"Persona 4 Golden",
+			"bgcolor":"gold",
+			"textcolor":"black"
+		},
+		{
+			"identifier":"p5",
+			"title":"Persona 5",
+			"bgcolor":"maroon",
+			"textcolor":"white"
+		},
+		{
+			"identifier":"p5r",
+			"title":"Persona 5 Royal",
+			"bgcolor":"firebrick",
+			"textcolor":"white"
+		}
+	]
+}
