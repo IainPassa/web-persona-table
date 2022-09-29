@@ -58,11 +58,18 @@
 				<p>Red table cells contain the results of fusing personas of the same arcana.</p>
 			</section>
 			<section>
-				<h3>On Normal Fusion</h3>
-				<p>(todo: write nice instructions) match column and row for the arcanas of your ingredients. the exact result is also based on the avg base level, usually rounded upwards, but same-arcana rounds downwards</p>
+				<h3>How Normal Fusion Works</h3>
+				<p>Normal fusion combines two personas into one.</p>
+				<p>The arcana of the resulting persona depends on the arcanas of the fusion ingredients.</p>
+				<p>If you combine two personas of the same arcana, the result will have the same arcana.</p>
+				<p>If you combine two personas with differing arcanas, match the arcana of one persona with a row header on the table, and match the arcana of the other persona with a column header on the table, and find the resulting cell of the intersection between the chosen row and the chosen column.<p>
+				<p>If this does not result in a green cell on the table, flip which arcana is used for the table row and arcana is used for the table column and try again.</p>
+				<p>The resulting green cell will be the arcana of the new persona.</p>
+				<p>The exact result of the fusion will depend on the average of the starting levels of the personas used: it will typically be whichever persona of the result arcana has the lowest starting level but is also still higher starting level than the average from the ingredients.</p>
+				<p>Be warned that fusing two personas of the same arcana reverses this and instead results in whichever persona of the result arcana has the highest starting level but is also still lower starting level than the average from the ingredients.</p>
 			</section>
 			<section class="triangleinfo">
-				<h3>On Triangle Fusion</h3>
+				<h3>How Triangle Fusion Works</h3>
 				<p>To find the arcana result of a triangle fusion, first find which arcana you would get from fusing the two lowest-levelled personas of the three (with the green section of the table, like a normal-spread fusion). Take the resulting arcana and combine it with the arcana of the highest-levelled persona of the three in the blue section of the table. In the case of a level tie, the persona with a lower arcana (in the order used in the table headers) is treated as higher-levelled. (For instance, a persona of the Fool arcana is always treated as higher-levelled in the case of a tie.)</p>
 			</section>
 		</section>
